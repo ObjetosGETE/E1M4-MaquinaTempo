@@ -1,0 +1,160 @@
+.conteudo {
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+    left: calc(50% - 1920px / 2);
+    top: calc(50% - 1080px / 2);
+    margin: auto;
+}
+
+/********************/
+/** vire o celular **/
+/********************/
+
+.p-paisagem {
+    color: white;
+    text-align: center;
+}
+
+.img-paisagem {
+    max-width: 70% !important;
+    height: auto;
+    display: block;
+}
+
+@media only screen and (orientation: portrait) {
+    .modo-smart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #7c88e7;
+        z-index: 9999999999999999999;
+    }
+}
+
+.peca-top,
+.peca-teclado,
+.peca-left,
+.peca-right,
+.peca-left-teclado,
+.peca-left-teclado-2,
+.peca-right-teclado {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+.peca-tela {
+    left: 490px;
+    top: -66px;
+}
+
+.peca-top {
+    left: 733px;
+    top: 175px;
+    animation-name: moverPecaTopo;
+}
+
+.peca-teclado {
+    left: 719px;
+    top: 179px;
+    animation-name: moverTeclado;
+}
+
+.peca-left {
+    left: 554px;
+    top: -4px;
+    animation-name: moverPecaLeft;
+}
+
+.peca-right {
+    right: 534px;
+    top: 218px;
+    animation-name: moverPecaRigth;
+}
+
+.peca-left-teclado {
+    top: 650px;
+    left: 744px;
+    animation-name: moverPecaLeftTeclado;
+}
+
+.peca-left-teclado-2 {
+    top: 370px;
+    left: 715px;
+    animation-name: moverPecaLeftTeclado2;
+}
+
+.img-left-teclado {
+    width: 65%;
+}
+
+.peca-right-teclado {
+    top: 671px;
+    right: 559px;
+    animation-name: moverTeclado;
+    animation-name: moverPecaRightTeclado;
+}
+
+
+
+/* animaçãoes */
+
+@keyframes moverPecaTopo {
+    to {
+        top: 5px;
+    }
+}
+
+@keyframes moverTeclado {
+    to {
+        top: 541px;
+    }
+}
+
+@keyframes moverPecaLeft {
+    to {
+        left: 432px;
+    }
+}
+
+@keyframes moverPecaRigth {
+    to {
+        right: 320px;
+    }
+}
+
+@keyframes moverPecaRigth {
+    to {
+        right: 320px;
+    }
+}
+
+
+
+@keyframes moverPecaLeftTeclado {
+    to {
+        left: 531px;
+    }
+}
+
+@keyframes moverPecaLeftTeclado2 {
+    to {
+        top: 558px;
+        left: 254px;
+    }
+}
+
+@keyframes moverPecaRightTeclado {
+    to {
+        right: 129px;
+    }
+}
