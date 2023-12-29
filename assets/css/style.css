@@ -55,15 +55,32 @@
     opacity: 0.4;
 }
 
+.grupo-btn-teclado {
+    top: 142px;
+    left: 49px;
+    width: 468px;
+    height: 240px;
+}
+
 .btn-teclado {
-    border-radius: 100%;
-    border: 2px solid aliceblue;
-    /* background-color: white; */
+    width: 37px;
+    height: 52px;
+    margin-inline: 7px;
+    border-radius: 10px;
+    background-color: none !important;
+    opacity: 0;
+    text-align: center !important;
+    padding: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .btn-teclado:hover {
     background-color: white;
-    opacity: 0.4;
+    border: 2px solid aliceblue;
+    color: #383838;
+    font-size: 21px;
+    opacity: 1;
 }
 
 .btn-voltar {
@@ -228,6 +245,27 @@
     }
 }
 
+/* botões teclado */
+
+#es {
+    width: 153px;
+    margin-inline: 3px;
+}
+
+#en {
+    width: 72px;
+}
+
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
 /**********************************************************/
 /******************* página anos 30 ***********************/
 /**********************************************************/
@@ -355,4 +393,40 @@
     width: 1265px;
     height: 690px;
     transform: rotate(-20deg);
+}
+
+
+/**********************************************************/
+/********************* estilo modais **********************/
+/**********************************************************/
+
+.header-30{
+    background-color: #798562;
+    color: white;
+}
+
+.header-70{
+    background-color: #ff6b2d;
+    color: white;
+}
+
+.header-80{
+    background-color: #624391;
+    color: white;
+}
+
+.header-90{
+    background-color: #22b0e3;
+    color: white;
+}
+
+.header-2000{
+    background-color: #3e54c0;
+color: white;
+}
+
+.fecha-modal {
+    background-color: #c82637;
+    color: white;
+    border: 2px solid black;
 }
