@@ -7,9 +7,9 @@
     margin: auto;
 }
 
-/********************/
-/** vire o celular **/
-/********************/
+/**********************************************************/
+/******************* vire o celular ***********************/
+/**********************************************************/
 
 .p-paisagem {
     color: white;
@@ -40,13 +40,56 @@
     }
 }
 
+/**********************************************************/
+/****************** estilo botoes *************************/
+/**********************************************************/
+
+.btn-transparente {
+    border-radius: 100%;
+    border: 2px solid aliceblue;
+    /* background-color: white; */
+}
+
+.btn-transparente:hover {
+    background-color: #f3e38e;
+    opacity: 0.4;
+}
+
+.btn-teclado {
+    border-radius: 100%;
+    border: 2px solid aliceblue;
+    /* background-color: white; */
+}
+
+.btn-teclado:hover {
+    background-color: white;
+    opacity: 0.4;
+}
+
+.btn-voltar {
+    right: 5px;
+    top: 5px;
+    border: 4px solid black;
+    font-size: 52px !important;
+    background-color: #f3e38e;
+    width: 20%;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+.btn-voltar:hover {
+    background-color: #66240e;
+    color: white;
+}
+
+
+/**********************************************************/
+/****************** maquina do tempo **********************/
+/**********************************************************/
+
 .peca-top,
-.peca-teclado,
 .peca-left,
-.peca-right,
-.peca-left-teclado,
-.peca-left-teclado-2,
-.peca-right-teclado {
+.peca-right {
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-play-state: paused;
@@ -66,7 +109,7 @@
 .peca-teclado {
     left: 719px;
     top: 179px;
-    animation-name: moverTeclado;
+    animation: moverTeclado 3s forwards;
 }
 
 .peca-left {
@@ -82,15 +125,11 @@
 }
 
 .peca-left-teclado {
-    top: 650px;
-    left: 744px;
-    animation-name: moverPecaLeftTeclado;
+    animation: moverPecaLeftTecladoMeio 6s forwards;
 }
 
 .peca-left-teclado-2 {
-    top: 370px;
-    left: 715px;
-    animation-name: moverPecaLeftTeclado2;
+    animation: moverPecaLeftTeclado2 9s forwards !important;
 }
 
 .img-left-teclado {
@@ -98,12 +137,10 @@
 }
 
 .peca-right-teclado {
-    top: 671px;
+    top: 268px;
     right: 559px;
-    animation-name: moverTeclado;
-    animation-name: moverPecaRightTeclado;
+    animation: moverPecaRightTeclado 6s forwards !important;
 }
-
 
 
 /* animaçãoes */
@@ -139,22 +176,183 @@
 }
 
 
+@keyframes moverPecaLeftTecladoMeio {
+    0% {
+        top: 232px;
+        left: 725px
+    }
 
-@keyframes moverPecaLeftTeclado {
-    to {
+    50% {
+        left: 725px;
+        top: 662px;
+    }
+
+    100% {
+        top: 650px;
         left: 531px;
     }
 }
 
 @keyframes moverPecaLeftTeclado2 {
-    to {
+    0% {
+        top: 232px;
+        left: 715px;
+    }
+
+    50% {
+        top: 566px;
+        left: 715px;
+    }
+
+    100% {
         top: 558px;
         left: 254px;
     }
 }
 
+
 @keyframes moverPecaRightTeclado {
-    to {
+    0% {
+        top: 200px;
+        right: 559px;
+    }
+
+    50% {
+        top: 649px;
+        right: 559px;
+    }
+
+    100% {
+        top: 671px;
         right: 129px;
     }
+}
+
+/**********************************************************/
+/******************* página anos 30 ***********************/
+/**********************************************************/
+
+#conteudo-01 {
+    top: 237px;
+    left: 287px;
+    width: 236px;
+    height: 234px;
+}
+
+#conteudo-02 {
+    top: 471px;
+    left: 336px;
+    width: 161px;
+    height: 130px;
+}
+
+#conteudo-03 {
+    top: 553px;
+    left: 540px;
+    width: 172px;
+    height: 151px;
+}
+
+#conteudo-04 {
+    top: 820px;
+    left: 1553px;
+    width: 198px;
+    height: 293px;
+}
+
+
+/**********************************************************/
+/******************* página anos 70 ***********************/
+/**********************************************************/
+
+#conteudo-05 {
+    top: 103px;
+    left: 257px;
+    width: 595px;
+    height: 707px;
+}
+
+#conteudo-06 {
+    top: 510px;
+    left: 1349px;
+    width: 302px;
+    height: 274px;
+}
+
+
+/**********************************************************/
+/******************* página anos 80 ***********************/
+/**********************************************************/
+
+#conteudo-07 {
+    top: 67px;
+    left: 56px;
+    width: 253px;
+    height: 236px;
+}
+
+#conteudo-08 {
+    top: -3px;
+    right: 330px;
+    width: 336px;
+    height: 400px;
+}
+
+#conteudo-09 {
+    top: 838px;
+    right: 361px;
+    width: 230px;
+    height: 200px;
+}
+
+/**********************************************************/
+/******************* página anos 90 ***********************/
+/**********************************************************/
+
+#conteudo-10 {
+    top: -64px;
+    left: -53px;
+    width: 448px;
+    height: 852px;
+    transform: rotate(10deg);
+}
+
+#conteudo-11 {
+    top: 33px;
+    left: 437px;
+    width: 300px;
+    height: 498px;
+}
+
+#conteudo-12 {
+    top: 570px;
+    right: -24px;
+    width: 179px;
+    height: 430px;
+}
+
+/**********************************************************/
+/****************** página anos 2000 **********************/
+/**********************************************************/
+
+#conteudo-13 {
+    top: -64px;
+    left: -53px;
+    width: 383px;
+    height: 852px;
+}
+
+#conteudo-14 {
+    top: 483px;
+    left: 335px;
+    width: 407px;
+    height: 585px;
+}
+
+#conteudo-15 {
+    top: -44px;
+    right: -116px;
+    width: 1265px;
+    height: 690px;
+    transform: rotate(-20deg);
 }
