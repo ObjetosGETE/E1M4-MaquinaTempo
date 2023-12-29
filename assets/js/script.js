@@ -37,7 +37,14 @@ function resizeBodyConteudo() {
     }
 }
 
+function audioClick() {
+    $('.som-clique').on('click', function () {
+        $('#somBotao')[0].play();
+    });
+}
+
 $(document).ready(function () {
+    audioClick();
     resizeBodyConteudo()
     $(window).resize(function () {
         resizeBodyConteudo()
@@ -63,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     playNextAnimation();
 });
+
