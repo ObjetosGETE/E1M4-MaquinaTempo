@@ -47,7 +47,7 @@ $(document).ready(function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".peca-top, .peca-teclado, .peca-left, .peca-right, .peca-left-teclado, .peca-left-teclado-2, .peca-right-teclado");
+    const elements = document.querySelectorAll(".peca-top,  .peca-left, .peca-right");
     const animationContainer = document.querySelector(".animation-container");
     const delayBetweenAnimations = 1000;
 
