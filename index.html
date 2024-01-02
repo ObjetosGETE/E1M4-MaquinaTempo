@@ -48,7 +48,7 @@
                         <button type="button" id="07" class="btn som-clique btn-teclado">7</button>
                         <button type="button" id="08" class="btn som-clique btn-teclado">8</button>
                         <button type="button" id="09" class="btn som-clique btn-teclado">9</button>
-                        <button type="button" id="00" class="btn som-clique btn-teclado">0</button>
+                        <button type="button" id="del" class="btn som-clique btn-teclado">&larr;</button>
                     </div>
 
                     <div class="btn-group me-2" role="group" aria-label="Second group">
@@ -85,7 +85,7 @@
                         <button type="button" id="0w" class="btn som-clique btn-teclado">w</button>
                         <button type="button" id="0y" class="btn som-clique btn-teclado">y</button>
                     </div>
-                    <button type="button" id="es" class="btn som-clique btn-teclado btn-lg">espaço</button>
+                    <button type="button" id="es" class="btn som-clique btn-teclado btn-lg">Espaço</button>
                     <button type="button" id="0z" class="btn som-clique btn-teclado">z</button>
 
                 </div>
@@ -93,7 +93,15 @@
             </div>
            
             <div class="position-absolute peca-tela">
-                <img src="assets/img/animacao/Ativo 1.png" class="img-fluid w-75" alt="peça maquina do tempo">
+                <!-- <img src="assets/img/animacao/Ativo 1.png" class="img-fluid w-75" alt="peça maquina do tempo"> -->
+                <!-- <img src="assets/img/animacao/Ativo-1-fundo-preto.png" class="img-fluid w-75" alt="peça maquina do tempo"> -->
+                <img src="assets/img/animacao/Ativo 1.png" class="img-fluid w-75" alt="vortice">
+                <div class="btn-toolbar position-absolute grupo-btn-teclado" role="toolbar" aria-label="Toolbar with button groups">
+                  <!-- ... (your existing buttons) ... -->
+                </div>
+                
+                <!-- Text input field -->
+                <input type="text" id="texto" class="form-control position-absolute" readonly>
             </div>
         </div>
         <div class="anos30 d-none">

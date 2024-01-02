@@ -43,8 +43,31 @@ function audioClick() {
     });
 }
 
+function digitacao() {
+    var campoText = '';
+
+    function enviarTextoInput() {
+        $('#texto').val(campoText);
+    }
+
+    $('.btn-teclado').on('click', function () {
+        var buttonText = $(this).text();
+
+        if (this.id === 'es') {
+            campoText += ' ';
+        } else if (this.id === 'del') {
+            campoText = campoText.slice(0, -1);
+        } else {
+            campoText += buttonText;
+        }
+
+        enviarTextoInput();
+    });
+}
+
 $(document).ready(function () {
     audioClick();
+    digitacao();
     resizeBodyConteudo()
     $(window).resize(function () {
         resizeBodyConteudo()
@@ -70,4 +93,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     playNextAnimation();
 });
-
