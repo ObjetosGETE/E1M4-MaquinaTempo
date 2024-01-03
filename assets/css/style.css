@@ -99,6 +99,18 @@
     color: white;
 }
 
+#btnValidarAno {
+    top: 571px;
+    left: 573px;
+    background-color: #136895 !important;
+    color: white;
+    border: 2px solid black;
+    width: 224px;
+    height: 47px;
+    border-radius: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 /**********************************************************/
 /****************** maquina do tempo **********************/
@@ -257,25 +269,28 @@
 }
 
 #del {
-	font-size: 43px;
+    font-size: 43px;
 }
 
-.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
-	border-top-right-radius: 6px;
-	border-bottom-right-radius: 6px;
+.btn-group>.btn-group:not(:last-child)>.btn,
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
-.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
-	border-top-left-radius: 6px;
-	border-bottom-left-radius: 6px;
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:nth-child(n+3),
+.btn-group> :not(.btn-check)+.btn {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 #texto {
-	top: 303px;
-	width: 662px;
-	left: 112px;
-	height: 230px;
-	font-size: 30px;
+    top: 303px;
+    width: 662px;
+    left: 112px;
+    height: 230px;
+    font-size: 30px;
     background-color: #00e7ff;
     border: none;
 }
@@ -403,11 +418,11 @@
 }
 
 #conteudo-15 {
-    top: -44px;
+    top: 147px;
     right: -116px;
-    width: 1265px;
-    height: 690px;
-    transform: rotate(-20deg);
+    width: 1285px;
+    height: 539px;
+    transform: rotate(-18deg);
 }
 
 
@@ -415,29 +430,29 @@
 /********************* estilo modais **********************/
 /**********************************************************/
 
-.header-30{
+.header-30 {
     background-color: #798562;
     color: white;
 }
 
-.header-70{
+.header-70 {
     background-color: #ff6b2d;
     color: white;
 }
 
-.header-80{
+.header-80 {
     background-color: #624391;
     color: white;
 }
 
-.header-90{
+.header-90 {
     background-color: #22b0e3;
     color: white;
 }
 
-.header-2000{
+.header-2000 {
     background-color: #3e54c0;
-color: white;
+    color: white;
 }
 
 .fecha-modal {

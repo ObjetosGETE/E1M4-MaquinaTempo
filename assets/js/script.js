@@ -65,27 +65,80 @@ function digitacao() {
     });
 }
 
+function limparCampoTexto() {
+    $("#texto").val('');
+}
+
+function btnVoltar() {
+    $('.btn-voltar').on('click', function () {
+        $('.anos30, .anos70, .anos80, .anos90, .anos00').addClass('d-none');
+        $('.maquina-tempo').removeClass('d-none');
+
+        limparCampoTexto();
+    });
+}
+
+function validacaoAno() {
+    var textoCompleto = $('#texto').val().trim();
+
+    var matchAno = textoCompleto.match(/\d{2}$/);
+
+    if (matchAno) {
+        var doisUltimosDigitos = matchAno[0];
+
+        $('.maquina-tempo').addClass('d-none');
+
+        switch (doisUltimosDigitos) {
+            case '30':
+                $('.anos30').removeClass('d-none');
+                console.log('está aqui');
+                break;
+            case '70':
+                $('.anos70').removeClass('d-none');
+                break;
+            case '80':
+                $('.anos80').removeClass('d-none');
+                break;
+            case '90':
+                $('.anos90').removeClass('d-none');
+                break;
+            case '00':
+                $('.anos00').removeClass('d-none');
+                break;
+            default:
+                console.log('Ano não reconhecido:', doisUltimosDigitos);
+        }
+    } else {
+        console.log('Nenhum ano encontrado no texto:', textoCompleto);
+    }
+}
+
+
+
 $(document).ready(function () {
+
+    btnVoltar();
     audioClick();
     digitacao();
-    resizeBodyConteudo()
+    resizeBodyConteudo();
+
+    $('#btnValidarAno').on('click', function () {
+        validacaoAno();
+    });
+
     $(window).resize(function () {
-        resizeBodyConteudo()
-    })
+        resizeBodyConteudo();
+    });
 
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".peca-top,  .peca-left, .peca-right");
-    const animationContainer = document.querySelector(".animation-container");
+    const elements = $(".peca-top, .peca-left, .peca-right");
+    const animationContainer = $(".animation-container");
     const delayBetweenAnimations = 1000;
 
     let index = 0;
 
     function playNextAnimation() {
         if (index < elements.length) {
-            elements[index].style.animationPlayState = "running";
+            $(elements[index]).css("animation-play-state", "running");
             index++;
             setTimeout(playNextAnimation, delayBetweenAnimations);
         }
@@ -93,3 +146,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     playNextAnimation();
 });
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const elements = document.querySelectorAll(".peca-top,  .peca-left, .peca-right");
+//     const animationContainer = document.querySelector(".animation-container");
+//     const delayBetweenAnimations = 1000;
+
+//     let index = 0;
+
+//     function playNextAnimation() {
+//         if (index < elements.length) {
+//             elements[index].style.animationPlayState = "running";
+//             index++;
+//             setTimeout(playNextAnimation, delayBetweenAnimations);
+//         }
+//     }
+
+//     playNextAnimation();
+// });
