@@ -46,8 +46,7 @@
 
 .btn-transparente {
     border-radius: 100%;
-    border: 2px solid aliceblue;
-    /* background-color: white; */
+    border: 1px solid aliceblue;
 }
 
 .btn-transparente:hover {
@@ -101,15 +100,58 @@
 
 #btnValidarAno {
     top: 571px;
-    left: 573px;
-    background-color: #136895 !important;
-    color: white;
+    left: 534px;
+    background-color: #d5b847 !important;
+    color: #151515;
     border: 2px solid black;
     width: 224px;
     height: 47px;
     border-radius: 14px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.btn-ampliar {
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-ampliar:hover {
+    transform: scale(1.5);
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.material-symbols-outlined {
+    font-size: 48px !important;
+    padding: 6px;
+}
+
+.meuBotao {
+    background-color: #d5b847;
+    color: #151515;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 27px;
+    cursor: pointer;
+    top: 948px;
+    left: 1779px;
+    border-radius: 51px;
+    border: 4px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.meuBotao i {
+    font-size: 75px;
+    vertical-align: middle;
 }
 
 /**********************************************************/
