@@ -131,11 +131,38 @@ $(document).ready(function () {
     function btnVoltar() {
         $('.btn-voltar').on('click', function () {
             $('.anos30, .anos70, .anos80, .anos90, .anos00').addClass('d-none');
+            $('#vortice').addClass('d-none');
             $('.maquina-tempo').removeClass('d-none');
             pausarTodasMusicas();
             limparCampoTexto();
         });
     }
+
+    function vorticeNaTela() {
+
+        $("#texto").fadeOut(1000);
+        $("#bgpadrao").fadeOut(2000);
+        $("#btnValidarAno").fadeOut(2000);
+
+
+        setTimeout(function () {
+
+            $('#vortice')
+                .removeClass('d-none')
+                .css({
+                    top: '452px',
+                    left: '455px',
+                    width: '1px'
+                })
+
+                .animate({
+                    top: '266px',
+                    left: '263px',
+                    width: '378px'
+                }, 2000);
+        }, 3000);
+    }
+
 
     function validacaoAno() {
         var textoCompleto = $('#texto').val().trim();
@@ -145,25 +172,38 @@ $(document).ready(function () {
         if (matchAno) {
             var doisUltimosDigitos = matchAno[0];
 
-            $('.maquina-tempo').addClass('d-none');
+            // $('.maquina-tempo').addClass('d-none');
 
             switch (doisUltimosDigitos) {
                 case '30':
-                    $('.anos30').removeClass('d-none');
-                    reproduzirMusica("caminho_da_musica.mp3", 0.3);
-                    console.log('está aqui');
+                    vorticeNaTela();
+                    setTimeout(function () {
+                        $('.anos30').removeClass('d-none');
+                    }, 5000);
                     break;
                 case '70':
-                    $('.anos70').removeClass('d-none');
+                    vorticeNaTela();
+                    setTimeout(function () {
+                        $('.anos70').removeClass('d-none');
+                    }, 5000);
                     break;
                 case '80':
-                    $('.anos80').removeClass('d-none');
+                    vorticeNaTela();
+                    setTimeout(function () {
+                        $('.anos80').removeClass('d-none');
+                    }, 5000);
                     break;
                 case '90':
-                    $('.anos90').removeClass('d-none');
+                    vorticeNaTela();
+                    setTimeout(function () {
+                        $('.anos90').removeClass('d-none');
+                    }, 5000);
                     break;
                 case '00':
-                    $('.anos00').removeClass('d-none');
+                    vorticeNaTela();
+                    setTimeout(function () {
+                        $('.anos00').removeClass('d-none');
+                    }, 5000);
                     break;
                 default:
                     console.log('Ano não reconhecido:', doisUltimosDigitos);
