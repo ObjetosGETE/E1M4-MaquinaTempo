@@ -133,6 +133,8 @@ $(document).ready(function () {
             $('.anos30, .anos70, .anos80, .anos90, .anos00').addClass('d-none');
             $('#vortice').addClass('d-none');
             $('.maquina-tempo').removeClass('d-none');
+            $("#texto").fadeIn(3000);
+            $("#bgpadrao").fadeIn(1000);
             pausarTodasMusicas();
             limparCampoTexto();
         });
