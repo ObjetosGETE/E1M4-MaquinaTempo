@@ -16,8 +16,8 @@
 </head>
 
 <body>
-  <div class="conteudo">
 
+  <div class="conteudo">
     <div class="maquina-tempo animation-container">
       <div class="position-absolute peca-top" id="p-top">
         <img src="assets/img/animacao/Ativo 2.png" class="img-fluid w-75" alt="peça maquina do tempo">
@@ -104,7 +104,8 @@
         <img src="assets/img/animacao/Ativo-1-fundo-preto.png" class="img-fluid w-75" alt="peça maquina do tempo">
         <button type="button" id="btnValidarAno" class="btn btn-primary position-absolute btn-ampliar">Viajar no
           tempo</button>
-        <h1 class="titulo-principal position-absolute" id="h1-maquina">Digite a década para qual deseja viajar!</h1>
+        <h1 class="titulo-principal position-absolute" id="h1-maquina">Digite o número correspondente à década que você
+          gostaria de visitar: 1930, 1970, 1980, 1990, 2000 ou 2023!</h1>
         <input type="text" id="texto" class="form-control position-absolute text-center" readonly>
       </div>
     </div>
@@ -600,8 +601,10 @@ computer
   </div>
 
   <div>
-    <audio id="som" src="assets/audio/robo (1).mp3" preload="auto"></audio>
+
     <audio id="somBotao" src="assets/audio/clique.mp3" preload="auto"></audio>
+    <audio id="somMaquina" src="assets/audio/ruido.mp3" preload="auto"></audio>
+    <audio id="somDeFundoMaquina" src="assets/audio/somDeFundoMaquina.mp3" preload="auto"></audio>
 
 
     <!-- <audio id="music2020" src="assets/audio/music2023.mp3" preload="auto"></audio> -->

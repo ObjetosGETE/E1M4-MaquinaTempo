@@ -503,10 +503,10 @@
 /* tela */
 
 #texto {
-    top: 414px;
-    width: 662px;
-    left: 112px;
-    height: 98px;
+    top: 449px;
+    width: 705px;
+    left: 111px;
+    height: 111px;
     font-size: 40px;
     background-color: #00e7ff;
     border: none;
@@ -515,14 +515,14 @@
 }
 
 .titulo-principal {
-    max-width: 620px;
+    max-width: 660px;
     text-align: center;
     margin: 60px auto;
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    top: 236px;
-    left: 137px;
-    font-size: 36px;
+    top: 216px;
+    left: 116px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -565,7 +565,6 @@
         border-radius: 0%;
     }
 }
-
 
 
 /**********************************************************/

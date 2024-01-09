@@ -91,10 +91,7 @@ $(document).ready(function () {
         setTimeout(function () {
 
             musicaElement.volume = volume;
-
-
             musicaElement.play();
-
 
             $('.meuBotao i').text('volume_up');
         }, 3000);
@@ -135,7 +132,22 @@ $(document).ready(function () {
         }
 
         enviarTextoInput();
+
     });
+
+    function somBgMaquina() {
+        var musicaMaquina = $('#somDeFundoMaquina')[0];
+        musicaMaquina.volume = 0.5;
+        musicaMaquina.play();
+    }
+
+    function somAtivacao() {
+        var musicaAtivacao = $('#somMaquina')[0];
+        musicaAtivacao.volume = 0.5;
+        musicaAtivacao.play();
+    }
+
+
 
     function efeitoDeDigitacao() {
         function typeWrite(elemento) {
@@ -151,7 +163,9 @@ $(document).ready(function () {
         }
         const titulo = document.querySelector('.titulo-principal');
         typeWrite(titulo);
+        somBgMaquina()
     }
+
 
     function limparCampoTexto() {
         $("#texto").val('');
@@ -275,7 +289,6 @@ $(document).ready(function () {
         $("#bgpadrao").fadeOut(2000);
         $("#btnValidarAno").fadeOut(2000);
 
-
         setTimeout(function () {
 
             $('#vortice')
@@ -296,6 +309,7 @@ $(document).ready(function () {
 
     }
 
+
     function validacaoAno() {
         var textoCompleto = $('#texto').val().trim();
 
@@ -306,6 +320,7 @@ $(document).ready(function () {
 
             switch (doisUltimosDigitos) {
                 case '30':
+                    somAtivacao()
                     setTimeout(function () {
                         var musica30 = $('#musica30')[0];
                         musica30.play();
@@ -319,6 +334,7 @@ $(document).ready(function () {
                     }, 8000);
                     break;
                 case '70':
+                    somAtivacao()
                     setTimeout(function () {
                         var musica70 = $('#musica70')[0];
                         musica70.play();
@@ -332,6 +348,7 @@ $(document).ready(function () {
                     }, 5000);
                     break;
                 case '80':
+                    somAtivacao()
                     setTimeout(function () {
                         var musica80 = $('#musica80')[0];
                         musica80.play();
@@ -345,6 +362,7 @@ $(document).ready(function () {
                     }, 5000);
                     break;
                 case '90':
+                    somAtivacao()
                     setTimeout(function () {
                         var musica90 = $('#musica90')[0];
                         musica90.play();
@@ -358,6 +376,7 @@ $(document).ready(function () {
                     }, 5000);
                     break;
                 case '00':
+                    somAtivacao()
                     setTimeout(function () {
                         var musica2000 = $('#musica2000')[0];
                         musica2000.play();
