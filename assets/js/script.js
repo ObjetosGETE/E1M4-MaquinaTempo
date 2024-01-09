@@ -87,8 +87,20 @@ $(document).ready(function () {
 
     }
 
-    function pausarTodasMusicas() {
+    function musicaInicial(musicaElement, volume) {
+        setTimeout(function () {
 
+            musicaElement.volume = volume;
+
+
+            musicaElement.play();
+
+
+            $('.meuBotao i').text('volume_up');
+        }, 3000);
+    }
+
+    function pausarTodasMusicas() {
         $('.meuBotao i').text('volume_off');
         musica30.pause();
         musica30.currentTime = 0;
@@ -115,6 +127,9 @@ $(document).ready(function () {
             campoText += ' ';
         } else if (this.id === 'del') {
             campoText = campoText.slice(0, -1);
+        } else if (this.id === 'en') {
+            campoText += ' ';
+            validacaoAno();
         } else {
             campoText += buttonText;
         }
@@ -292,7 +307,9 @@ $(document).ready(function () {
             switch (doisUltimosDigitos) {
                 case '30':
                     setTimeout(function () {
-                        $('#musica30')[0].play();
+                        var musica30 = $('#musica30')[0];
+                        musica30.play();
+                        musica30.volume = 0.1;
                         $('.meuBotao i').text('volume_up');
                     }, 3000);
                     pecasVoltando();
@@ -303,7 +320,9 @@ $(document).ready(function () {
                     break;
                 case '70':
                     setTimeout(function () {
-                        $('#musica70')[0].play();
+                        var musica70 = $('#musica70')[0];
+                        musica70.play();
+                        musica70.volume = 0.1;
                         $('.meuBotao i').text('volume_up');
                     }, 3000);
                     pecasVoltando();
@@ -314,7 +333,9 @@ $(document).ready(function () {
                     break;
                 case '80':
                     setTimeout(function () {
-                        $('#musica80')[0].play();
+                        var musica80 = $('#musica80')[0];
+                        musica80.play();
+                        musica80.volume = 0.1;
                         $('.meuBotao i').text('volume_up');
                     }, 3000);
                     pecasVoltando();
@@ -325,7 +346,9 @@ $(document).ready(function () {
                     break;
                 case '90':
                     setTimeout(function () {
-                        $('#musica90')[0].play();
+                        var musica90 = $('#musica90')[0];
+                        musica90.play();
+                        musica90.volume = 0.1;
                         $('.meuBotao i').text('volume_up');
                     }, 3000);
                     pecasVoltando();
@@ -336,7 +359,9 @@ $(document).ready(function () {
                     break;
                 case '00':
                     setTimeout(function () {
-                        $('#musica2000')[0].play();
+                        var musica2000 = $('#musica2000')[0];
+                        musica2000.play();
+                        musica2000.volume = 0.1;
                         $('.meuBotao i').text('volume_up');
                     }, 3000);
                     pecasVoltando();
@@ -353,10 +378,60 @@ $(document).ready(function () {
         }
     }
 
-
-
     $('#btnValidarAno').on('click', function () {
         validacaoAno();
+    });
+
+
+    function piscadinha(botaoID, classeTemporaria) {
+        $(botaoID).addClass(classeTemporaria);
+
+        //   tá feio mas funciona 
+        setTimeout(function () {
+            $(botaoID).removeClass(classeTemporaria);
+            setTimeout(function () {
+                $(botaoID).addClass(classeTemporaria);
+                setTimeout(function () {
+                    $(botaoID).removeClass(classeTemporaria);
+                    setTimeout(function () {
+                        $(botaoID).addClass(classeTemporaria);
+                        setTimeout(function () {
+                            $(botaoID).removeClass(classeTemporaria);
+                            setTimeout(function () {
+                                $(botaoID).addClass(classeTemporaria);
+                                setTimeout(function () {
+                                    $(botaoID).removeClass(classeTemporaria);
+                                    setTimeout(function () {
+                                        $(botaoID).addClass(classeTemporaria);
+                                        setTimeout(function () {
+                                            $(botaoID).removeClass(classeTemporaria);
+                                        }, 1000);
+                                    }, 1000);
+                                }, 500);
+                            }, 600);
+                        }, 500);
+                    }, 600);
+                }, 500);
+            }, 600);
+        }, 500);
+    }
+
+    $('.exibir').click(function () {
+        piscadinha('#conteudo-01', 'temporaria-01');
+        piscadinha('#conteudo-02', 'temporaria-02');
+        piscadinha('#conteudo-03', 'temporaria-03');
+        piscadinha('#conteudo-04', 'temporaria-04');
+        piscadinha('#conteudo-05', 'temporaria-05');
+        piscadinha('#conteudo-06', 'temporaria-06');
+        piscadinha('#conteudo-07', 'temporaria-07');
+        piscadinha('#conteudo-08', 'temporaria-08');
+        piscadinha('#conteudo-09', 'temporaria-09');
+        piscadinha('#conteudo-10', 'temporaria-10');
+        piscadinha('#conteudo-11', 'temporaria-11');
+        piscadinha('#conteudo-12', 'temporaria-12');
+        piscadinha('#conteudo-13', 'temporaria-13');
+        piscadinha('#conteudo-14', 'temporaria-14');
+        piscadinha('#conteudo-15', 'temporaria-15');
     });
 
     $(window).resize(function () {

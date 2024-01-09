@@ -83,19 +83,19 @@
 }
 
 .btn-voltar {
-    right: 5px;
-    top: 5px;
+    right: 167px;
+    top: 28px;
+    background-color: #d5b847;
+    color: #151515;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 27px;
+    border-radius: 51px;
     border: 4px solid black;
-    font-size: 52px !important;
-    background-color: #f3e38e;
-    width: 20%;
-    padding: 2px;
-    border-radius: 20px;
-}
-
-.btn-voltar:hover {
-    background-color: #66240e;
-    color: white;
+    width: 101px;
+    height: 101px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 #btnValidarAno {
@@ -113,19 +113,23 @@
 
 .btn-ampliar {
     transition: transform 0.2s ease-in-out;
+
 }
 
 .btn-ampliar:hover {
     transform: scale(1.5);
+    background-color: #66240e !important;
+    color: white !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
 .material-symbols-outlined {
     font-variation-settings:
-        'FILL'0,
-        'wght'400,
-        'GRAD'0,
-        'opsz'48
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
 
 .material-symbols-outlined {
@@ -140,18 +144,34 @@
     text-decoration: none;
     display: inline-block;
     font-size: 27px;
-    cursor: pointer;
-    top: 948px;
-    left: 1779px;
+    right: 46px;
+    top: 28px;
     border-radius: 51px;
     border: 4px solid black;
     width: 100px;
     height: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 .meuBotao i {
     font-size: 75px;
     vertical-align: middle;
+}
+
+.exibir {
+    background-color: #d5b847;
+    color: #151515;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 27px;
+    border-radius: 51px;
+    border: 4px solid black;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    right: 294px;
+    top: 28px;
 }
 
 /**********************************************************/
@@ -553,43 +573,91 @@
 /**********************************************************/
 
 #conteudo-01 {
-    top: 237px;
-    left: 287px;
-    width: 236px;
-    height: 234px;
+    top: 226px;
+    left: 314px;
+    width: 213px;
+    height: 249px;
+}
+
+#conteudo-01:hover {
+    background: url('../img/btn-conteudo-1.png') no-repeat center center;
+    background-size: cover;
 }
 
 #conteudo-02 {
-    top: 471px;
-    left: 336px;
-    width: 161px;
-    height: 130px;
+    top: 461px;
+    left: 324px;
+    width: 180px;
+    height: 134px;
+}
+
+#conteudo-02:hover {
+    background: url('../img/btn-conteudo-quadradin.png') no-repeat center center;
+    background-size: cover;
 }
 
 #conteudo-03 {
-    top: 553px;
-    left: 540px;
-    width: 172px;
+    top: 561px;
+    left: 527px;
+    width: 195px;
     height: 151px;
 }
 
-#conteudo-04 {
-    top: 820px;
-    left: 1553px;
-    width: 198px;
-    height: 293px;
+#conteudo-03:hover {
+    background: url('../img/btn-conteudo-quadradin.png') no-repeat center center;
+    background-size: cover;
 }
 
+#conteudo-04 {
+    top: 783px;
+    left: 1564px;
+    width: 188px;
+    height: 303px;
+}
+
+#conteudo-04:hover {
+    background: url('../img/btn-conteudo-4.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+.temporaria-01 {
+    background: url('../img/btn-conteudo-1.png') no-repeat center center;
+    background-size: cover !important;
+}
+
+
+.temporaria-02 {
+    background: url('../img/btn-conteudo-quadradin.png') no-repeat center center;
+    background-size: cover !important;
+}
+
+
+.temporaria-03 {
+    background: url('../img/btn-conteudo-quadradin.png') no-repeat center center;
+    background-size: cover !important;
+}
+
+.temporaria-04 {
+    background: url('../img/btn-conteudo-4.png') no-repeat center center;
+    background-size: cover !important;
+}
 
 /**********************************************************/
 /******************* página anos 70 ***********************/
 /**********************************************************/
 
 #conteudo-05 {
-    top: 103px;
-    left: 257px;
-    width: 595px;
-    height: 707px;
+    top: 105px;
+    left: 290px;
+    width: 572px;
+    height: 682px;
+}
+
+#conteudo-05:hover {
+    background: url('../img/btn-conteudo-5.png') no-repeat center center;
+    background-size: cover;
 }
 
 #conteudo-06 {
@@ -599,30 +667,75 @@
     height: 274px;
 }
 
+#conteudo-06:hover {
+    background: url('../img/btn-conteudo-3.png') no-repeat center center;
+    background-size: cover;
+}
+
+.temporaria-05 {
+    background: url('../img/btn-conteudo-5.png') no-repeat center center;
+    background-size: cover;
+}
+
+.temporaria-06 {
+    background: url('../img/btn-conteudo-3.png') no-repeat center center;
+    background-size: cover;
+}
+
 
 /**********************************************************/
 /******************* página anos 80 ***********************/
 /**********************************************************/
 
 #conteudo-07 {
-    top: 67px;
-    left: 56px;
-    width: 253px;
-    height: 236px;
+    top: 43px;
+    left: 64px;
+    width: 230px;
+    height: 486px;
+}
+
+#conteudo-07:hover {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
 }
 
 #conteudo-08 {
-    top: -3px;
-    right: 330px;
-    width: 336px;
-    height: 400px;
+    top: -9px;
+    right: 404px;
+    width: 214px;
+    height: 436px;
+}
+
+#conteudo-08:hover {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
 }
 
 #conteudo-09 {
-    top: 838px;
-    right: 361px;
-    width: 230px;
-    height: 200px;
+    top: 659px;
+    right: 333px;
+    width: 207px;
+    height: 430px;
+}
+
+#conteudo-09:hover {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
+}
+
+.temporaria-07 {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
+}
+
+.temporaria-08 {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
+}
+
+.temporaria-09 {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
 }
 
 /**********************************************************/
@@ -630,53 +743,116 @@
 /**********************************************************/
 
 #conteudo-10 {
-    top: -64px;
-    left: -53px;
-    width: 448px;
-    height: 852px;
-    transform: rotate(10deg);
+    top: 10px;
+    left: 5px;
+    width: 365px;
+    height: 774px;
+}
+
+#conteudo-10:hover {
+    background: url('../img/btn-conteudo-10.png') no-repeat center center;
+    background-size: cover;
 }
 
 #conteudo-11 {
-    top: 33px;
-    left: 437px;
-    width: 300px;
-    height: 498px;
+    top: 15px;
+    left: 440px;
+    width: 259px;
+    height: 539px;
+}
+
+#conteudo-11:hover {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
 }
 
 #conteudo-12 {
-    top: 570px;
-    right: -24px;
-    width: 179px;
-    height: 430px;
+    top: 589px;
+    right: 0px;
+    width: 180px;
+    height: 411px;
 }
+
+#conteudo-12:hover {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
+}
+
+.temporaria-10 {
+    background: url('../img/btn-conteudo-10.png') no-repeat center center;
+    background-size: cover;
+}
+
+.temporaria-11 {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
+}
+
+.temporaria-12 {
+    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background-size: cover;
+}
+
+
 
 /**********************************************************/
 /****************** página anos 2000 **********************/
 /**********************************************************/
 
 #conteudo-13 {
-    top: -64px;
-    left: -53px;
-    width: 383px;
-    height: 852px;
+    top: 6px;
+    left: 7px;
+    width: 257px;
+    height: 772px;
+}
+
+#conteudo-13:hover {
+    background: url('../img/btn-conteudo-13.png') no-repeat center center;
+    background-size: cover;
 }
 
 #conteudo-14 {
     top: 483px;
-    left: 335px;
-    width: 407px;
-    height: 585px;
+    left: 362px;
+    width: 364px;
+    height: 584px;
+}
+
+#conteudo-14:hover {
+    background: url('../img/btn-conteudo-14.png') no-repeat center center;
+    background-size: cover;
 }
 
 #conteudo-15 {
-    top: 147px;
-    right: -116px;
-    width: 1285px;
-    height: 539px;
-    transform: rotate(-18deg);
+    top: 287px;
+    right: 4px;
+    width: 1123px;
+    height: 310px;
+    transform: rotate(-5deg);
 }
 
+#conteudo-15:hover {
+    background: url('../img/btn-conteudo-15.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+.temporaria-13 {
+    background: url('../img/btn-conteudo-13.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+.temporaria-14 {
+    background: url('../img/btn-conteudo-14.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+.temporaria-15 {
+    background: url('../img/btn-conteudo-15.png') no-repeat center center;
+    background-size: cover;
+}
 
 /**********************************************************/
 /********************* estilo modais **********************/
