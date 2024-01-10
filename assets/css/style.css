@@ -624,19 +624,15 @@
     background-size: cover;
 }
 
-
-
 .temporaria-01 {
     background: url('../img/btn-conteudo-1.png') no-repeat center center;
     background-size: cover !important;
 }
 
-
 .temporaria-02 {
     background: url('../img/btn-conteudo-quadradin.png') no-repeat center center;
     background-size: cover !important;
 }
-
 
 .temporaria-03 {
     background: url('../img/btn-conteudo-quadradin.png') no-repeat center center;
@@ -798,7 +794,6 @@
 }
 
 
-
 /**********************************************************/
 /****************** página anos 2000 **********************/
 /**********************************************************/
@@ -929,8 +924,6 @@
     background-color: #2c2010;
     color: white;
 }
-
-
 
 .fecha-modal {
     background-color: #c82637;
