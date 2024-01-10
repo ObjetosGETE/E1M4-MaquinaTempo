@@ -261,7 +261,8 @@ $(document).ready(function () {
         $('.btn-voltar').on('click', function () {
             limparCampoTexto();
             $('.anos30, .anos70, .anos80, .anos90, .anos00, .anos2023').addClass('d-none');
-            $('#vortice').addClass('d-none');
+            
+           
 
             
             $('#btnValidarAno').css({
@@ -293,20 +294,15 @@ $(document).ready(function () {
 
         setTimeout(function () {
 
-            $('#vortice')
-                .removeClass('d-none')
-                .css({
-                    top: '452px',
-                    left: '455px',
-                    width: '1px'
+            $('#pai-vortice')
+                .fadeIn(500)
+                .delay(2000)
+                .fadeOut(2000, function (){
+                    $("#pai-vortice").css("display","none")
                 })
 
-                .animate({
-                    top: '0px',
-                    left: '0px',
-                    round: '1%',
-                    width: '100%'
-                }, 3000);
+            
+
         }, 3000);
 
     }

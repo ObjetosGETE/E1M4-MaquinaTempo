@@ -1,10 +1,16 @@
+body {
+    background-color: #333;
+}
+
 .conteudo {
+    background-color: white;
     width: 1920px;
     height: 1080px;
     position: fixed;
     left: calc(50% - 1920px / 2);
     top: calc(50% - 1080px / 2);
     margin: auto;
+    overflow: hidden;
 }
 
 /**********************************************************/
@@ -21,7 +27,9 @@
     height: auto;
     display: block;
 }
-
+.modo-smart {
+    display: none
+}
 @media only screen and (orientation: portrait) {
     .modo-smart {
         display: flex;
@@ -40,6 +48,14 @@
     }
 }
 
+
+.btn-teclado:hover {
+    background-color: white !important;
+    border: 0px none !important;
+    color: rgba(0,0,0,0) !important;
+    opacity: 0.5 !important;
+    transition: 0s;
+}
 /**********************************************************/
 /****************** estilo botoes *************************/
 /**********************************************************/
@@ -560,15 +576,37 @@
     animation: retiraBorda 5s forwards !important;
 }
 
+.fundo-vortice {
+    z-index: 10000000000000000000000000000000000000000000;
+    position: absolute;
+    top: calc(50% - (1080px / 2));
+    left: calc(50% - (1920px / 2));
+    width: 1920px;
+    height: 1080px;
+    background-color: #040305;
+    overflow: hidden;
+  }
+  
+  .fundo-vortice img {
+    width: auto !important;
+    height: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    transform-origin: center center;
+  }
 
 @keyframes retiraBorda {
     0% {
-        border-radius: 100%;
-    }
-
-    100% {
-        border-radius: 0%;
-    }
+        transform: scale(0)
+     }
+ 
+     100% {
+         transform: scale(1)
+     }
+}
+@keyframes animEntradaVortice {
+    
 }
 
 
