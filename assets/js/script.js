@@ -49,7 +49,7 @@ $(document).ready(function () {
     var musica80 = $('#musica80')[0];
     var musica90 = $('#musica90')[0];
     var musica2000 = $('#musica2000')[0];
-    var musica2000 = $('#musica2023')[0];
+    var musica2023 = $('#musica2023')[0];
 
     $('#botaoMusic30').click(function () {
         controlarMusica(musica30, $(this));
@@ -104,6 +104,7 @@ $(document).ready(function () {
         musica2000.currentTime = 0;
         musica2023.pause();
         musica2023.currentTime = 0;
+        console.log('passou aqui e nao parou');
     }
 
     var campoText = '';
@@ -261,6 +262,8 @@ $(document).ready(function () {
             limparCampoTexto();
             $('.anos30, .anos70, .anos80, .anos90, .anos00, .anos2023').addClass('d-none');
             $('#vortice').addClass('d-none');
+
+            
             $('#btnValidarAno').css({
                 display: 'block'
             });
@@ -399,7 +402,7 @@ $(document).ready(function () {
                         musica90.play();
                         musica90.volume = 0.1;
                         $('.meuBotao i').text('volume_up');
-                    }, 3000);
+                    }, 4000);
                     pecasVoltando();
                     vorticeNaTela();
                     setTimeout(function () {
@@ -415,7 +418,7 @@ $(document).ready(function () {
                         musica2000.play();
                         musica2000.volume = 0.1;
                         $('.meuBotao i').text('volume_up');
-                    }, 3000);
+                    }, 4000);
                     pecasVoltando();
                     vorticeNaTela();
                     setTimeout(function () {
@@ -431,7 +434,7 @@ $(document).ready(function () {
                         musica2023.play();
                         musica2023.volume = 0.1;
                         $('.meuBotao i').text('volume_up');
-                    }, 3000);
+                    }, 4000);
                     pecasVoltando();
                     vorticeNaTela();
                     setTimeout(function () {
