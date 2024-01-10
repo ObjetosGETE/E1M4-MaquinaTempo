@@ -49,6 +49,7 @@ $(document).ready(function () {
     var musica80 = $('#musica80')[0];
     var musica90 = $('#musica90')[0];
     var musica2000 = $('#musica2000')[0];
+    var musica2000 = $('#musica2023')[0];
 
     $('#botaoMusic30').click(function () {
         controlarMusica(musica30, $(this));
@@ -70,6 +71,10 @@ $(document).ready(function () {
         controlarMusica(musica2000, $(this));
     });
 
+    $('#botaoMusic2023').click(function () {
+        controlarMusica(musica2023, $(this));
+    });
+
     function controlarMusica(musica, botao) {
         var icone = botao.find('i');
 
@@ -83,18 +88,6 @@ $(document).ready(function () {
             musica.pause();
             musica.currentTime = 0;
         }
-
-
-    }
-
-    function musicaInicial(musicaElement, volume) {
-        setTimeout(function () {
-
-            musicaElement.volume = volume;
-            musicaElement.play();
-
-            $('.meuBotao i').text('volume_up');
-        }, 3000);
     }
 
     function pausarTodasMusicas() {
@@ -109,6 +102,8 @@ $(document).ready(function () {
         musica90.currentTime = 0;
         musica2000.pause();
         musica2000.currentTime = 0;
+        musica2023.pause();
+        musica2023.currentTime = 0;
     }
 
     var campoText = '';
@@ -135,18 +130,19 @@ $(document).ready(function () {
 
     });
 
+
     function somBgMaquina() {
         var musicaMaquina = $('#somDeFundoMaquina')[0];
         musicaMaquina.volume = 0.5;
         musicaMaquina.play();
     }
 
+
     function somAtivacao() {
         var musicaAtivacao = $('#somMaquina')[0];
         musicaAtivacao.volume = 0.5;
         musicaAtivacao.play();
     }
-
 
 
     function efeitoDeDigitacao() {
@@ -185,6 +181,7 @@ $(document).ready(function () {
             setTimeout(playNextAnimation, delayBetweenAnimations);
         }
     }
+
 
     function pecasVoltando() {
         function voltaTopo() {
@@ -232,6 +229,7 @@ $(document).ready(function () {
         voltaPecaRigthTeclado2();
     }
 
+
     function posicaoInicial() {
 
         $("#p-top").addClass('peca-top');
@@ -257,10 +255,11 @@ $(document).ready(function () {
 
     }
 
+
     function btnVoltar() {
         $('.btn-voltar').on('click', function () {
             limparCampoTexto();
-            $('.anos30, .anos70, .anos80, .anos90, .anos00').addClass('d-none');
+            $('.anos30, .anos70, .anos80, .anos90, .anos00, .anos2023').addClass('d-none');
             $('#vortice').addClass('d-none');
             $('#btnValidarAno').css({
                 display: 'block'
@@ -310,6 +309,31 @@ $(document).ready(function () {
     }
 
 
+    function transicao() {
+        $('.filtro').css('filter', 'grayscale(100%)');
+
+        setTimeout(function () {
+            $('.filtro').css('filter', 'grayscale(0%)');
+        }, 2000);
+
+        setTimeout(function () {
+            $('.filtro').css('transition', 'filter 1s ease-in-out');
+        }, 5000);
+    }
+
+
+    function mensagemErro() {
+        limparCampoTexto();
+        $('#btnValidarAno').addClass('d-none');
+        $('.mensagemErro').removeClass('d-none');
+        $('#somErro')[0].play();
+        setTimeout(function () {
+            $('#btnValidarAno').removeClass('d-none');
+            $('.mensagemErro').addClass('d-none');
+        }, 6010);
+    }
+
+
     function validacaoAno() {
         var textoCompleto = $('#texto').val().trim();
 
@@ -320,6 +344,7 @@ $(document).ready(function () {
 
             switch (doisUltimosDigitos) {
                 case '30':
+                    $('#somDeFundoMaquina')[0].pause();
                     somAtivacao()
                     setTimeout(function () {
                         var musica30 = $('#musica30')[0];
@@ -331,9 +356,11 @@ $(document).ready(function () {
                     vorticeNaTela();
                     setTimeout(function () {
                         $('.anos30').removeClass('d-none');
-                    }, 8000);
+                        transicao();
+                    }, 5000);
                     break;
                 case '70':
+                    $('#somDeFundoMaquina')[0].pause();
                     somAtivacao()
                     setTimeout(function () {
                         var musica70 = $('#musica70')[0];
@@ -345,9 +372,11 @@ $(document).ready(function () {
                     vorticeNaTela();
                     setTimeout(function () {
                         $('.anos70').removeClass('d-none');
+                        transicao();
                     }, 5000);
                     break;
                 case '80':
+                    $('#somDeFundoMaquina')[0].pause();
                     somAtivacao()
                     setTimeout(function () {
                         var musica80 = $('#musica80')[0];
@@ -359,9 +388,11 @@ $(document).ready(function () {
                     vorticeNaTela();
                     setTimeout(function () {
                         $('.anos80').removeClass('d-none');
+                        transicao();
                     }, 5000);
                     break;
                 case '90':
+                    $('#somDeFundoMaquina')[0].pause();
                     somAtivacao()
                     setTimeout(function () {
                         var musica90 = $('#musica90')[0];
@@ -373,9 +404,11 @@ $(document).ready(function () {
                     vorticeNaTela();
                     setTimeout(function () {
                         $('.anos90').removeClass('d-none');
+                        transicao();
                     }, 5000);
                     break;
                 case '00':
+                    $('#somDeFundoMaquina')[0].pause();
                     somAtivacao()
                     setTimeout(function () {
                         var musica2000 = $('#musica2000')[0];
@@ -387,15 +420,35 @@ $(document).ready(function () {
                     vorticeNaTela();
                     setTimeout(function () {
                         $('.anos00').removeClass('d-none');
+                        transicao();
+                    }, 5000);
+                    break;
+                case '23':
+                    $('#somDeFundoMaquina')[0].pause();
+                    somAtivacao()
+                    setTimeout(function () {
+                        var musica2023 = $('#musica2023')[0];
+                        musica2023.play();
+                        musica2023.volume = 0.1;
+                        $('.meuBotao i').text('volume_up');
+                    }, 3000);
+                    pecasVoltando();
+                    vorticeNaTela();
+                    setTimeout(function () {
+                        $('.anos2023').removeClass('d-none');
+                        transicao();
                     }, 5000);
                     break;
                 default:
+                    mensagemErro();
                     console.log('Ano não reconhecido:', doisUltimosDigitos);
             }
         } else {
+            mensagemErro();
             console.log('Nenhum ano encontrado no texto:', textoCompleto);
         }
     }
+
 
     $('#btnValidarAno').on('click', function () {
         validacaoAno();
@@ -435,6 +488,7 @@ $(document).ready(function () {
         }, 500);
     }
 
+
     $('.exibir').click(function () {
         piscadinha('#conteudo-01', 'temporaria-01');
         piscadinha('#conteudo-02', 'temporaria-02');
@@ -451,7 +505,10 @@ $(document).ready(function () {
         piscadinha('#conteudo-13', 'temporaria-13');
         piscadinha('#conteudo-14', 'temporaria-14');
         piscadinha('#conteudo-15', 'temporaria-15');
+        piscadinha('#conteudo-16', 'temporaria-16');
+        piscadinha('#conteudo-17', 'temporaria-17');
     });
+
 
     $(window).resize(function () {
         resizeBodyConteudo();
