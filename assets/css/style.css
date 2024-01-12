@@ -1,5 +1,5 @@
 body {
-    background-color: #333;
+    background-color: #040205;
 }
 
 .conteudo {
@@ -488,19 +488,247 @@ body {
     }
 }
 
-/* botões teclado */
+/*****************************************************************/
+/************************* botões teclado ************************/
+/*****************************************************************/
+
+
+
+#b0 {
+	left: 5px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 1 {
+	left: 46px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 2 {
+	left: 89px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 3 {
+	left: 131px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 4 {
+	left: 172px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 5 {
+	left: 215px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 6 {
+	left: 256px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 7 {
+	left: 299px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 8 {
+	left: 340px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 9 {
+	left: 381px;
+	top: -4px;
+	border-radius: 10px;
+}
+
+#\30 a {
+	left: 5px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 b {
+	left: 46px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 c {
+	left: 89px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 d {
+	left: 131px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 e {
+	left: 172px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 f {
+	left: 215px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 g {
+	left: 256px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 h {
+	left: 299px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 i {
+	left: 340px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 j {
+	left: 381px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 k {
+	left: 423px;
+	top: 59px;
+	border-radius: 10px;
+}
+
+#\30 l {
+	left: 5px;
+	top: 122px;
+	border-radius: 10px;
+}
+
+#\30 m {
+	left: 46px;
+	top: 122px;
+	border-radius: 10px;
+}
+
+#\30 n {
+	left: 89px;
+	top: 122px;
+	border-radius: 10px;
+}
+
+#\30 o {
+	left: 131px;
+	top: 122px;
+	border-radius: 10px;
+}
+
+#\30 p {
+	left: 172px;
+	top: 122px;
+	border-radius: 10px;
+}
+
+#\30 q {
+	left: 215px;
+	top: 122px;
+	border-radius: 10px;
+}
+
+#\30 r {
+	left: 256px;
+	top: 122px;
+	border-radius: 10px;
+}
+
+#\30 s {
+	left: 299px;
+	top: 122px;
+	border-radius: 10px;
+}
+
+#\30 t {
+	left: 340px;
+	top: 122px;
+	border-radius: 10px;
+}
+
+#\30 u {
+	left: 5px;
+	top: 182px;
+	border-radius: 10px;
+}
+
+#\30 v {
+	left: 46px;
+	top: 182px;
+	border-radius: 10px;
+}
+
+#\30 x {
+	left: 89px;
+	top: 182px;
+	border-radius: 10px;
+}
+
+#\30 w {
+	left: 131px;
+	top: 182px;
+	border-radius: 10px;
+}
+
+#\30 y {
+	left: 172px;
+	top: 182px;
+	border-radius: 10px;
+}
+
+#\30 z {
+	left: 381px;
+	top: 182px;
+	border-radius: 10px;
+}
 
 #es {
-    width: 153px;
-    margin-inline: 3px;
+	width: 153px;
+	margin-inline: 3px;
+	top: 182px;
+	left: 225px;
 }
 
 #en {
-    width: 72px;
+	left: 386px;
+	top: 122px;
+	border-radius: 10px;
+	width: 72px;
 }
 
 #del {
-    font-size: 43px;
+	font-size: 43px;
+	left: 423px;
+	top: -4px;
+	border-radius: 10px;
 }
 
 .btn-group>.btn-group:not(:last-child)>.btn,

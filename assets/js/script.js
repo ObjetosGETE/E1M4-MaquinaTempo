@@ -261,10 +261,7 @@ $(document).ready(function () {
         $('.btn-voltar').on('click', function () {
             limparCampoTexto();
             $('.anos30, .anos70, .anos80, .anos90, .anos00, .anos2023').addClass('d-none');
-            
-           
-
-            
+               
             $('#btnValidarAno').css({
                 display: 'block'
             });
@@ -272,7 +269,6 @@ $(document).ready(function () {
                 $('#h1-maquina').css({
                     display: 'block'
                 });
-                efeitoDeDigitacao();
             }, 4000);
 
 
