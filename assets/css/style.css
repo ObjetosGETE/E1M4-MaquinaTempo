@@ -143,6 +143,11 @@ body {
     vertical-align: middle;
 }
 
+#fullInicial{
+    right: 46px;
+    top: 28px;
+}
+
 .exibir {
     right: 464px;
     top: 28px;
