@@ -104,7 +104,6 @@ $(document).ready(function () {
         musica2000.currentTime = 0;
         musica2023.pause();
         musica2023.currentTime = 0;
-        console.log('passou aqui e nao parou');
     }
 
     var campoText = '';
@@ -261,10 +260,13 @@ $(document).ready(function () {
         $('.btn-voltar').on('click', function () {
             limparCampoTexto();
             $('.anos30, .anos70, .anos80, .anos90, .anos00, .anos2023').addClass('d-none');
-               
+
             $('#btnValidarAno').css({
                 display: 'block'
             });
+
+            $(".maquina-tempo").css("display", "block");
+
             setTimeout(function () {
                 $('#h1-maquina').css({
                     display: 'block'
@@ -272,7 +274,7 @@ $(document).ready(function () {
             }, 4000);
 
 
-            $("#texto").fadeIn(3000);
+            $("#texto").fadeIn(1000);
             $("#bgpadrao").fadeIn(1000);
             pausarTodasMusicas();
 
@@ -293,14 +295,10 @@ $(document).ready(function () {
             $('#pai-vortice')
                 .fadeIn(500)
                 .delay(2000)
-                .fadeOut(2000, function (){
-                    $("#pai-vortice").css("display","none")
+                .fadeOut(2000, function () {
+                    $("#pai-vortice").css("display", "none")
                 })
-
-            
-
         }, 3000);
-
     }
 
 
@@ -328,6 +326,9 @@ $(document).ready(function () {
         }, 6010);
     }
 
+    function esconderElementoComDelay(classe, delay) {
+        $(classe).delay(delay).fadeOut(0);
+    }
 
     function validacaoAno() {
         var textoCompleto = $('#texto').val().trim();
@@ -353,6 +354,7 @@ $(document).ready(function () {
                         $('.anos30').removeClass('d-none');
                         transicao();
                     }, 5000);
+                    esconderElementoComDelay(".maquina-tempo", 5000);
                     break;
                 case '70':
                     $('#somDeFundoMaquina')[0].pause();
@@ -369,6 +371,7 @@ $(document).ready(function () {
                         $('.anos70').removeClass('d-none');
                         transicao();
                     }, 5000);
+                    esconderElementoComDelay(".maquina-tempo", 5000);
                     break;
                 case '80':
                     $('#somDeFundoMaquina')[0].pause();
@@ -385,6 +388,7 @@ $(document).ready(function () {
                         $('.anos80').removeClass('d-none');
                         transicao();
                     }, 5000);
+                    esconderElementoComDelay(".maquina-tempo", 5000);
                     break;
                 case '90':
                     $('#somDeFundoMaquina')[0].pause();
@@ -401,6 +405,7 @@ $(document).ready(function () {
                         $('.anos90').removeClass('d-none');
                         transicao();
                     }, 5000);
+                    esconderElementoComDelay(".maquina-tempo", 5000);
                     break;
                 case '00':
                     $('#somDeFundoMaquina')[0].pause();
@@ -417,6 +422,7 @@ $(document).ready(function () {
                         $('.anos00').removeClass('d-none');
                         transicao();
                     }, 5000);
+                    esconderElementoComDelay(".maquina-tempo", 5000);
                     break;
                 case '23':
                     $('#somDeFundoMaquina')[0].pause();
@@ -433,6 +439,7 @@ $(document).ready(function () {
                         $('.anos2023').removeClass('d-none');
                         transicao();
                     }, 5000);
+                    esconderElementoComDelay(".maquina-tempo", 5000);
                     break;
                 default:
                     mensagemErro();
@@ -504,6 +511,40 @@ $(document).ready(function () {
         piscadinha('#conteudo-17', 'temporaria-17');
     });
 
+    function telaCheia() {
+        $('.btnFullScreen').on('click', toggleFullScreen);
+    
+        function toggleFullScreen() {
+            var elem = document.documentElement;
+    
+            if (!document.fullscreenElement && !document.mozFullScreenElement &&
+                !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                    $('.btnFullScreen i').text('fullscreen');
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                } else if (elem.mozRequestFullScreen) {
+                    elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                    $('.btnFullScreen i').text('fullscreen_exit');
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                }
+            }
+        }
+    }
+    
+
 
     $(window).resize(function () {
         resizeBodyConteudo();
@@ -515,4 +556,5 @@ $(document).ready(function () {
     audioClick();
     enviarTextoInput();
     resizeBodyConteudo();
+    telaCheia();
 });

@@ -27,9 +27,11 @@ body {
     height: auto;
     display: block;
 }
+
 .modo-smart {
     display: none
 }
+
 @media only screen and (orientation: portrait) {
     .modo-smart {
         display: flex;
@@ -52,10 +54,11 @@ body {
 .btn-teclado:hover {
     background-color: white !important;
     border: 0px none !important;
-    color: rgba(0,0,0,0) !important;
+    color: rgba(0, 0, 0, 0) !important;
     opacity: 0.5 !important;
     transition: 0s;
 }
+
 /**********************************************************/
 /****************** estilo botoes *************************/
 /**********************************************************/
@@ -99,7 +102,7 @@ body {
 }
 
 .btn-voltar {
-    right: 167px;
+    right: 256px;
     top: 28px;
     background-color: #d5b847;
     color: #151515;
@@ -107,11 +110,77 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 27px;
-    border-radius: 51px;
+    border-radius: 45px;
     border: 4px solid black;
-    width: 101px;
+    width: 182px;
     height: 101px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.btn-voltar i {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.meuBotao {
+    background-color: #d5b847;
+    color: #151515;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    right: 46px;
+    top: 28px;
+    border-radius: 45px;
+    border: 4px solid black;
+    width: 182px;
+    height: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+}
+
+.meuBotao i {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.exibir {
+    right: 464px;
+    top: 28px;
+    background-color: #d5b847;
+    color: #151515;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 45px;
+    border: 4px solid black;
+    width: 182px;
+    height: 101px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.exibir i {
+    vertical-align: middle;
+}
+
+.btnFullScreen {
+    right: 677px;
+    top: 28px;
+    background-color: #d5b847;
+    color: #151515;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 45px;
+    border: 4px solid black;
+    width: 182px;
+    height: 101px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.btnFullScreen i {
+    vertical-align: middle;
 }
 
 #btnValidarAno {
@@ -129,8 +198,8 @@ body {
 
 .btn-ampliar {
     transition: transform 0.2s ease-in-out;
-
 }
+
 
 .btn-ampliar:hover {
     transform: scale(1.5);
@@ -138,7 +207,6 @@ body {
     color: white !important;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .material-symbols-outlined {
     font-variation-settings:
@@ -149,46 +217,9 @@ body {
 }
 
 .material-symbols-outlined {
-    font-size: 48px !important;
-    padding: 6px;
+    font-size: 40px !important;
 }
 
-.meuBotao {
-    background-color: #d5b847;
-    color: #151515;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 27px;
-    right: 46px;
-    top: 28px;
-    border-radius: 51px;
-    border: 4px solid black;
-    width: 100px;
-    height: 100px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
-}
-
-.meuBotao i {
-    font-size: 75px;
-    vertical-align: middle;
-}
-
-.exibir {
-    background-color: #d5b847;
-    color: #151515;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 27px;
-    border-radius: 51px;
-    border: 4px solid black;
-    width: 100px;
-    height: 100px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
-    right: 294px;
-    top: 28px;
-}
 
 /**********************************************************/
 /****************** maquina do tempo **********************/
@@ -495,240 +526,240 @@ body {
 
 
 #b0 {
-	left: 5px;
-	top: -4px;
-	border-radius: 10px;
+    left: 5px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 1 {
-	left: 46px;
-	top: -4px;
-	border-radius: 10px;
+    left: 46px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 2 {
-	left: 89px;
-	top: -4px;
-	border-radius: 10px;
+    left: 89px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 3 {
-	left: 131px;
-	top: -4px;
-	border-radius: 10px;
+    left: 131px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 4 {
-	left: 172px;
-	top: -4px;
-	border-radius: 10px;
+    left: 172px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 5 {
-	left: 215px;
-	top: -4px;
-	border-radius: 10px;
+    left: 215px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 6 {
-	left: 256px;
-	top: -4px;
-	border-radius: 10px;
+    left: 256px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 7 {
-	left: 299px;
-	top: -4px;
-	border-radius: 10px;
+    left: 299px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 8 {
-	left: 340px;
-	top: -4px;
-	border-radius: 10px;
+    left: 340px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 9 {
-	left: 381px;
-	top: -4px;
-	border-radius: 10px;
+    left: 381px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 #\30 a {
-	left: 5px;
-	top: 59px;
-	border-radius: 10px;
+    left: 5px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 b {
-	left: 46px;
-	top: 59px;
-	border-radius: 10px;
+    left: 46px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 c {
-	left: 89px;
-	top: 59px;
-	border-radius: 10px;
+    left: 89px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 d {
-	left: 131px;
-	top: 59px;
-	border-radius: 10px;
+    left: 131px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 e {
-	left: 172px;
-	top: 59px;
-	border-radius: 10px;
+    left: 172px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 f {
-	left: 215px;
-	top: 59px;
-	border-radius: 10px;
+    left: 215px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 g {
-	left: 256px;
-	top: 59px;
-	border-radius: 10px;
+    left: 256px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 h {
-	left: 299px;
-	top: 59px;
-	border-radius: 10px;
+    left: 299px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 i {
-	left: 340px;
-	top: 59px;
-	border-radius: 10px;
+    left: 340px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 j {
-	left: 381px;
-	top: 59px;
-	border-radius: 10px;
+    left: 381px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 k {
-	left: 423px;
-	top: 59px;
-	border-radius: 10px;
+    left: 423px;
+    top: 59px;
+    border-radius: 10px;
 }
 
 #\30 l {
-	left: 5px;
-	top: 122px;
-	border-radius: 10px;
+    left: 5px;
+    top: 122px;
+    border-radius: 10px;
 }
 
 #\30 m {
-	left: 46px;
-	top: 122px;
-	border-radius: 10px;
+    left: 46px;
+    top: 122px;
+    border-radius: 10px;
 }
 
 #\30 n {
-	left: 89px;
-	top: 122px;
-	border-radius: 10px;
+    left: 89px;
+    top: 122px;
+    border-radius: 10px;
 }
 
 #\30 o {
-	left: 131px;
-	top: 122px;
-	border-radius: 10px;
+    left: 131px;
+    top: 122px;
+    border-radius: 10px;
 }
 
 #\30 p {
-	left: 172px;
-	top: 122px;
-	border-radius: 10px;
+    left: 172px;
+    top: 122px;
+    border-radius: 10px;
 }
 
 #\30 q {
-	left: 215px;
-	top: 122px;
-	border-radius: 10px;
+    left: 215px;
+    top: 122px;
+    border-radius: 10px;
 }
 
 #\30 r {
-	left: 256px;
-	top: 122px;
-	border-radius: 10px;
+    left: 256px;
+    top: 122px;
+    border-radius: 10px;
 }
 
 #\30 s {
-	left: 299px;
-	top: 122px;
-	border-radius: 10px;
+    left: 299px;
+    top: 122px;
+    border-radius: 10px;
 }
 
 #\30 t {
-	left: 340px;
-	top: 122px;
-	border-radius: 10px;
+    left: 340px;
+    top: 122px;
+    border-radius: 10px;
 }
 
 #\30 u {
-	left: 5px;
-	top: 182px;
-	border-radius: 10px;
+    left: 5px;
+    top: 182px;
+    border-radius: 10px;
 }
 
 #\30 v {
-	left: 46px;
-	top: 182px;
-	border-radius: 10px;
+    left: 46px;
+    top: 182px;
+    border-radius: 10px;
 }
 
 #\30 x {
-	left: 89px;
-	top: 182px;
-	border-radius: 10px;
+    left: 89px;
+    top: 182px;
+    border-radius: 10px;
 }
 
 #\30 w {
-	left: 131px;
-	top: 182px;
-	border-radius: 10px;
+    left: 131px;
+    top: 182px;
+    border-radius: 10px;
 }
 
 #\30 y {
-	left: 172px;
-	top: 182px;
-	border-radius: 10px;
+    left: 172px;
+    top: 182px;
+    border-radius: 10px;
 }
 
 #\30 z {
-	left: 381px;
-	top: 182px;
-	border-radius: 10px;
+    left: 381px;
+    top: 182px;
+    border-radius: 10px;
 }
 
 #es {
-	width: 153px;
-	margin-inline: 3px;
-	top: 182px;
-	left: 225px;
+    width: 153px;
+    margin-inline: 3px;
+    top: 182px;
+    left: 225px;
 }
 
 #en {
-	left: 386px;
-	top: 122px;
-	border-radius: 10px;
-	width: 72px;
+    left: 386px;
+    top: 122px;
+    border-radius: 10px;
+    width: 72px;
 }
 
 #del {
-	font-size: 43px;
-	left: 423px;
-	top: -4px;
-	border-radius: 10px;
+    font-size: 43px;
+    left: 423px;
+    top: -4px;
+    border-radius: 10px;
 }
 
 .btn-group>.btn-group:not(:last-child)>.btn,
@@ -813,29 +844,28 @@ body {
     height: 1080px;
     background-color: #040305;
     overflow: hidden;
-  }
-  
-  .fundo-vortice img {
+}
+
+.fundo-vortice img {
     width: auto !important;
     height: 100%;
     margin-left: auto !important;
     margin-right: auto !important;
     display: block !important;
     transform-origin: center center;
-  }
+}
 
 @keyframes retiraBorda {
     0% {
         transform: scale(0)
-     }
- 
-     100% {
-         transform: scale(1)
-     }
+    }
+
+    100% {
+        transform: scale(1)
+    }
 }
-@keyframes animEntradaVortice {
-    
-}
+
+@keyframes animEntradaVortice {}
 
 
 /**********************************************************/
