@@ -996,14 +996,14 @@ body {
 }
 
 #conteudo-08 {
-    top: -9px;
-    right: 404px;
-    width: 214px;
-    height: 436px;
+    top: 106px;
+    right: 411px;
+    width: 194px;
+    height: 306px;
 }
 
 #conteudo-08:hover {
-    background: url('../img/btn-conteudo-11.png') no-repeat center center;
+    background: url('../img/btn-conteudo-1.png') no-repeat center center;
     background-size: cover;
 }
 

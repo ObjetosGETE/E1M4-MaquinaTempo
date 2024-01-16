@@ -459,35 +459,15 @@ $(document).ready(function () {
 
     function piscadinha(botaoID, classeTemporaria) {
         $(botaoID).addClass(classeTemporaria);
-
-        //   tá feio mas funciona 
         setTimeout(function () {
             $(botaoID).removeClass(classeTemporaria);
             setTimeout(function () {
                 $(botaoID).addClass(classeTemporaria);
                 setTimeout(function () {
                     $(botaoID).removeClass(classeTemporaria);
-                    setTimeout(function () {
-                        $(botaoID).addClass(classeTemporaria);
-                        setTimeout(function () {
-                            $(botaoID).removeClass(classeTemporaria);
-                            setTimeout(function () {
-                                $(botaoID).addClass(classeTemporaria);
-                                setTimeout(function () {
-                                    $(botaoID).removeClass(classeTemporaria);
-                                    setTimeout(function () {
-                                        $(botaoID).addClass(classeTemporaria);
-                                        setTimeout(function () {
-                                            $(botaoID).removeClass(classeTemporaria);
-                                        }, 1000);
-                                    }, 1000);
-                                }, 500);
-                            }, 600);
-                        }, 500);
-                    }, 600);
-                }, 500);
-            }, 600);
-        }, 500);
+                }, 200);
+            }, 200);
+        }, 250);
     }
 
 
@@ -511,12 +491,34 @@ $(document).ready(function () {
         piscadinha('#conteudo-17', 'temporaria-17');
     });
 
+    function clicaPisca() {
+        piscadinha('#conteudo-01', 'temporaria-01');
+        piscadinha('#conteudo-02', 'temporaria-02');
+        piscadinha('#conteudo-03', 'temporaria-03');
+        piscadinha('#conteudo-04', 'temporaria-04');
+        piscadinha('#conteudo-05', 'temporaria-05');
+        piscadinha('#conteudo-06', 'temporaria-06');
+        piscadinha('#conteudo-07', 'temporaria-07');
+        piscadinha('#conteudo-08', 'temporaria-08');
+        piscadinha('#conteudo-09', 'temporaria-09');
+        piscadinha('#conteudo-10', 'temporaria-10');
+        piscadinha('#conteudo-11', 'temporaria-11');
+        piscadinha('#conteudo-12', 'temporaria-12');
+        piscadinha('#conteudo-13', 'temporaria-13');
+        piscadinha('#conteudo-14', 'temporaria-14');
+        piscadinha('#conteudo-15', 'temporaria-15');
+        piscadinha('#conteudo-16', 'temporaria-16');
+        piscadinha('#conteudo-17', 'temporaria-17');
+    }
+
+    document.addEventListener('click', clicaPisca);
+
     function telaCheia() {
         $('.btnFullScreen').on('click', toggleFullScreen);
-    
+
         function toggleFullScreen() {
             var elem = document.documentElement;
-    
+
             if (!document.fullscreenElement && !document.mozFullScreenElement &&
                 !document.webkitFullscreenElement && !document.msFullscreenElement) {
                 if (elem.requestFullscreen) {
@@ -543,7 +545,6 @@ $(document).ready(function () {
             }
         }
     }
-    
 
 
     $(window).resize(function () {
